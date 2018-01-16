@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Login
+{
+	public static void main(String[] args)
+	{
+		boolean ValidLogin = true;
+		
+		String ValidUser = "Ali";
+		String ValidPass = "hi";
+		
+
+		Scanner UserNameInput = new Scanner(System.in);
+		System.out.println("Enter your username: ");
+		String username = UserNameInput.nextLine();	
+	
+		Scanner PasswordInput = new Scanner(System.in);
+		System.out.println("Enter your password: ");
+		String password = PasswordInput.nextLine();
+		
+		
+		
+		
+		if(ValidUser.equals(username) && ValidPass.equals(password))
+		{
+			
+			System.out.println("Welcome " + username);
+			
+		}
+		else
+			System.out.println("Invalid Login");
+		
+	}
+}
